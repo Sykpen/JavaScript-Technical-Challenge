@@ -1,0 +1,40 @@
+.repo {
+  color: #0366d6;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.circle_flex {
+  display: flex;
+  align-items: center;
+}
+
+.private {
+  display: inline-block;
+  padding: 0 7px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  border-radius: 2em;
+  background-color: initial !important;
+  border: 1px solid transparent;
+}
+
+.red {
+  background-color: #e34c26;
+}
+
+.yellow {
+  background-color: #f1e05a;
+}
+
+.magenta {
+  background-color: #701516;
+}
