@@ -1,4 +1,8 @@
 # JavaScript-Technical-Challenge
+
+## Demo
+1. https://sykpyn-javascript-technical-challenge.netlify.app/
+
 ### To run the app
 1. git clone https://github.com/Sykpen/JavaScript-Technical-Challenge.git
 2. cd JavaScript-Technical-Challenge/
@@ -6,3 +10,4 @@
 4. cd github/
 5. npm install
 6. npm start
+
