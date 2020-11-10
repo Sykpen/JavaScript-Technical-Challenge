@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
-import { fetchProducts } from "../actions";
+import { fetchRepositories } from "../actions";
 import OneRepository from "../components/oneRepository";
 import { FormControl, Button, InputGroup, Container } from "react-bootstrap";
 
 class App extends Component {
   componentDidMount() {
-    return this.props.fetchProducts();
+    return this.props.fetchRepositories();
   }
 
   constructor(props) {
@@ -80,7 +80,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = {
-  fetchProducts,
+  fetchRepositories,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

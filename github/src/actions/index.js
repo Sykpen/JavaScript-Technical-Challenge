@@ -1,19 +1,16 @@
-import {
-    GET_REPOSITORIES
-} from "../constants";
+import { GET_REPOSITORIES } from "../constants";
 
-export const fetchProducts = () => {
-    return (dispatch) => {
-        fetch(`https://api.github.com/users/sykpen/repos`)
-        .then((response) => response.json())
-        .then((parsedResponse) => dispatch(receiveProducts(parsedResponse)));
-    };
+export const fetchRepositories = () => {
+  return (dispatch) => {
+    fetch(`https://api.github.com/users/sykpen/repos`)
+      .then((response) => response.json())
+      .then((parsedResponse) => dispatch(receiveRepositories(parsedResponse)));
   };
-  
-function receiveProducts(json) {
-    return {
-      type: GET_REPOSITORIES,
-      products: json,
-    };
-}
+};
 
+function receiveRepositories(json) {
+  return {
+    type: GET_REPOSITORIES,
+    products: json,
+  };
+}
